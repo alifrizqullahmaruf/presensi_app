@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:presensi_app/page/login_screen.dart';
+import 'package:presensi_app/page/auth/login_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

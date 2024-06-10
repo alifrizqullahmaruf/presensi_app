@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:presensi_app/page/register_screen.dart';
+import 'package:presensi_app/page/auth/register_screen.dart';
+import 'package:presensi_app/page/bottom_navbar/bottom_navbar.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -74,7 +75,8 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Handle submit
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BottomNavbar()));
               },
               child: Text("Submit"),
             ),
